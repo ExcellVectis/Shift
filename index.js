@@ -27,15 +27,20 @@ client.on("ready", () => {
 });
 
 client.on('guildMemberAdd', member => {
+
   this.client.guilds.get("425708600900583427");
   if(member.guild.roles.find("name","Subscriber"))
   member.addRole(member.guild.roles.find("name","Subscriber"));  
+
+  client.guilds.get("425708600900583427");
+  member.addRole(member.guild.roles.find("name","Subscriber"));  
+
 });
 
 
 const Webhook = require("webhook-discord")
 
-const Hook = new Webhook("https://discordapp.com/api/webhooks/425737445603147796/oGrZnqM8eKQUsAp0M46pvysHmJUFSUWgm7zfWC23TpBXhvbqMc-hTMT4LvMNUxGUgPwC")
+const Hook = new Webhook("WebhookLinkHere")
 
 client.on("guildCreate", guild => {
   guild.createChannel("nsfw-access","nsfw-access")
