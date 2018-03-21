@@ -28,13 +28,9 @@ client.on("ready", () => {
 
 client.on('guildMemberAdd', member => {
 
-  this.client.guilds.get("425708600900583427");
+  this.client.guilds.get("GuildIDHere");
   if(member.guild.roles.find("name","Subscriber"))
   member.addRole(member.guild.roles.find("name","Subscriber"));  
-
-  client.guilds.get("425708600900583427");
-  member.addRole(member.guild.roles.find("name","Subscriber"));  
-
 });
 
 
