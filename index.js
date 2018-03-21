@@ -27,14 +27,14 @@ client.on("ready", () => {
 });
 
 client.on('guildMemberAdd', member => {
-  client.guilds.get("425708600900583427");
-  member.addRole(member.guild.roles.find("name","Subscriber"));  
+  client.guilds.get("GuildIDHere");
+  member.addRole(member.guild.roles.find("name","RoleNameHere"));  
 });
 
 
 const Webhook = require("webhook-discord")
 
-const Hook = new Webhook("https://discordapp.com/api/webhooks/425737445603147796/oGrZnqM8eKQUsAp0M46pvysHmJUFSUWgm7zfWC23TpBXhvbqMc-hTMT4LvMNUxGUgPwC")
+const Hook = new Webhook("WebhookLinkHere")
 
 client.on("guildCreate", guild => {
   Hook.custom("Shift-Server-Logs",`I Have Been Added To ${guild.name}`,"Server Added","#0cd80a")
