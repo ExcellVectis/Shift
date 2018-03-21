@@ -62,7 +62,6 @@ if (message.author.bot) return;
  }
   
  if (command === 'help') {
-  await message.react(client.emojis.find('name', 'GreenGood'))
   const embed = new Discord.RichEmbed()
   .setColor(`d7f706`)
   .addField('Shift Commands', 'Here Is My Command List')
@@ -72,7 +71,7 @@ if (message.author.bot) return;
   .addField('Utility', 'Server - Gives Server Information\n\nInvite - Invite Shift To Your Server')
   .addField('Owner', 'Embed - Embeds Sentence That You Put')
   .addField('NSFW', 'Neko - This Returns A Neko')
-  message.author.send({embed});
+  message.channel.send({embed});
  } 
   
   if (command === 'ping') {

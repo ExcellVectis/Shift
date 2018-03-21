@@ -16,7 +16,9 @@
     "moment": "^2.21.0",
     "moment-duration-format": "^2.2.2",
     "webhook-discord": "^2.0.6",
-    "snekfetch": "^3.6.4"
+    "snekfetch": "^3.6.4",
+    "pm2": "^2.10.1",
+    "discord.io": "^2.5.3"
   },
   "engines": {
     "node": "9.x"
